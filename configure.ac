@@ -11,7 +11,6 @@ AM_INIT_AUTOMAKE([color-tests parallel-tests subdir-objects foreign])
 # Checks for programs.
 AC_PROG_CC
 AC_PATH_PROG([RONN],[ronn],[${am_missing_run}ronn])
-AC_SUBST([RONN])
 
 # Checks for libraries.
 
