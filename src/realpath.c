@@ -55,11 +55,10 @@ static char eol = '\n';
 void usage() {
 	printf("Usage: %s [OPTION]... FILE...\n"
 			"Prints the canonicalized absolute pathname of FILE.\n\n"
-			"  -e, --canonicalize-existing	the path must exist (default)\n"
-			"  -P, --physical		resolve symlinks (default)\n"
-			"  -q, --quiet			suppress error messages\n"
-			"  -z, --zero			terminate lines with \\0 instead of \\n\n"
-			"  -h, --help			display this help and exit\n", program_name);
+			"	-q,	--quiet			suppress error messages\n"
+			"	-z,	--zero			terminate lines with \\0 instead of \\n\n"
+			"		--help			display this help and exit\n"
+			"		--version		display version information and exit\n", program_name);
 	exit(EXIT_SUCCESS);
 }
 
@@ -126,9 +125,9 @@ int main(int argc, char **argv) {
 			case 's':
 			case RELATIVE_TO_OPTION:
 			case RELATIVE_BASE_OPTION:
-				warn_ignored(ch);
 			case 'e':
 			case 'P':
+				warn_ignored(ch);
 				break;
 			case HELP_OPTION:
 				usage();
