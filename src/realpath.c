@@ -55,10 +55,10 @@ static char eol = '\n';
 void usage() {
 	printf("Usage: %s [OPTION]... FILE...\n"
 			"Prints the canonicalized absolute pathname of FILE.\n\n"
-			"	-q,	--quiet			suppress error messages\n"
-			"	-z,	--zero			terminate lines with \\0 instead of \\n\n"
-			"		--help			display this help and exit\n"
-			"		--version		display version information and exit\n", program_name);
+			"	-q,	--quiet		suppress error messages\n"
+			"	-z,	--zero		terminate lines with NUL instead of LF\n"
+			"		--help		display this help and exit\n"
+			"		--version	display version information and exit\n", program_name);
 	exit(EXIT_SUCCESS);
 }
 

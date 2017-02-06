@@ -12,7 +12,7 @@ It will accept any options available with GNU realpath, but only a few will have
  * `-q`, `--quiet`:
    suppress error messages
  * `-z`, `--zero`:
-   terminate lines with \\\0 instead of \n
+   terminate lines with NUL instead of LF
  * `--help`:
    display help and exit
  * `--version`:
@@ -26,7 +26,7 @@ It will not terminate as long as not all <FILE> arguments have been processed, e
 realpath(3)
 
 ## COPYRIGHT
-    Copyright © 2017 David Winter
-    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-    This is free software: you are free to change and redistribute it.
-    There is NO WARRANTY, to the extent permitted by law.
+Copyright (c) 2017 David Winter  
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>  
+This is free software: you are free to change and redistribute it.  
+There is NO WARRANTY, to the extent permitted by law.  
