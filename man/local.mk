@@ -1,6 +1,6 @@
 man1_MANS = man/realpath.1
-CLEANFILES += $(man1_MANS)
-EXTRA_DIST += $(man1_MANS:.1=.1.ronn)
+DISTCLEANFILES += $(man1_MANS)
+EXTRA_DIST += $(man1_MANS)
 
 distclean-local:
 	test x$(srcdir) = x$(builddir) || rm -f $(man1_MANS)

@@ -1,6 +1,7 @@
 AM_CPPFLAGS = -Isrc -I$(top_srcdir)/src
 
 CLEANFILES =
+DISTCLEANFILES =
 MAINTAINERCLEANFILES = aclocal.m4 configure config.h.in~ config.h.in ChangeLog Makefile.in $(DIST_ARCHIVES)
 
 EXTRA_DIST = $(top_srcdir)/.version $(srcdir)/ChangeLog $(top_srcdir)/README.md
