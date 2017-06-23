@@ -20,4 +20,4 @@ autoscan.log
 configure.scan
 .version
 tags
-.tags
+.tags*

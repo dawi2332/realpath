@@ -1,0 +1,4 @@
+cmd: "autoreconf && ./configure"
+name: "autogen"
+sh: true,
+atomCommandName: namespace:command
