@@ -49,7 +49,7 @@ static const struct option longopts[] = {
 
 static int longindex;
 static const char *program_name = NULL;
-static char verbose = true;
+static bool verbose = true;
 static char eol = '\n';
 
 void usage() {
