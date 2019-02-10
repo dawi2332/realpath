@@ -26,6 +26,8 @@ AC_FUNC_MALLOC
 AC_CHECK_FUNCS([realpath strrchr], [], [AC_MSG_FAILURE(
 		[required library function not availaible])])
 
+AC_DEFINE([_DARWIN_BETTER_REALPATH], [1], [Define to 1 for better realpath on Darwin hosts])
+
 AC_CONFIG_FILES([Makefile])
 
 AC_OUTPUT
