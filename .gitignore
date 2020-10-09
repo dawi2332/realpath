@@ -1,4 +1,7 @@
 *.[oa]
+
+
+# Autobuild
 *.cache
 .dirstamp
 /ChangeLog
@@ -19,5 +22,10 @@
 autoscan.log
 configure.scan
 .version
+
+# ctags
 tags
 .tags*
+
+# Intellij
+/.idea/
