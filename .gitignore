@@ -29,3 +29,4 @@ tags
 
 # Intellij
 /.idea/
+compile_commands.json
